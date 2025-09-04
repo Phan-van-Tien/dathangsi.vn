@@ -238,7 +238,7 @@ a {
     display: block;
     box-shadow: 0 0 6px #999999;
     max-height: 1000px;
-    overflow: hidden;
+    overflow: visible;
     transition: max-height 1s ease-in-out;
     background-color: #fff;
 }
