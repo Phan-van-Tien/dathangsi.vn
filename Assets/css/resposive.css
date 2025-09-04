@@ -1,0 +1,252 @@
+/* lop top large*/
+@media (min-width: 1200px) {
+    .menu_992px {
+        display: none;
+    }
+}
+
+/* lop top small */
+@media (min-width: 992px) and (max-width:1199.98px) {
+
+    /* menu an */
+    .menu_an {
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    .menu_992px {
+        display: none;
+    }
+
+    /* fixxed */
+    .element_fixed a:nth-child(1) {
+        position: fixed;
+        bottom: 160px;
+        right: 5px;
+        cursor: pointer;
+        width: 30px;
+    }
+
+    .element_fixed>a:nth-child(2) {
+        position: fixed;
+        bottom: 200px;
+        right: 5px;
+        cursor: pointer;
+        width: 30px;
+    }
+
+    #bttop {
+        position: fixed;
+        bottom: 80px;
+        right: 15px;
+        cursor: pointer;
+        display: block;
+        width: 20px;
+    }
+
+    /* main 1 */
+    .main_1__container--responsive {
+        justify-content: start;
+    }
+
+    .container {
+        width: 992px;
+    }
+
+    .main_1__main--responsive {
+        width: 66.66666667%;
+    }
+
+    .main_1__right--responsive {
+        width: 33.33333333%;
+    }
+
+    /* main 4 */
+    .main_4__main--responsive a {
+        width: 24%;
+    }
+
+    /* main 5 */
+    .main_5__item {
+        width: 30%;
+    }
+
+    /* main 10 */
+    .main_10--info {
+        padding: 5px 0px;
+    }
+}
+
+/* table + moble */
+
+@media (max-width:991.98px) {
+
+    /* fixxed */
+    .element_fixed a:nth-child(1) {
+        position: fixed;
+        bottom: 160px;
+        right: 5px;
+        cursor: pointer;
+        width: 30px;
+    }
+
+    .element_fixed>a:nth-child(2) {
+        position: fixed;
+        bottom: 200px;
+        right: 5px;
+        cursor: pointer;
+        width: 30px;
+    }
+
+    #bttop {
+        position: fixed;
+        bottom: 80px;
+        right: 15px;
+        cursor: pointer;
+        display: block;
+        width: 20px;
+    }
+
+    /* bar menu */
+    .Bar__menu {
+        display: none;
+    }
+
+    /* menu an */
+    .menu_an {
+        max-height: 0px;
+        overflow: hidden;
+    }
+
+    /* header */
+    .main_1__container--responsive {
+        justify-content: start;
+    }
+
+    .container {
+        width: 992px;
+    }
+
+    .main_1__main--responsive {
+        width: 66.66666667%;
+    }
+
+    .main_1__right--responsive {
+        width: 33.33333333%;
+    }
+
+    .header__item {
+        display: none;
+    }
+
+    .zalo__call {
+        width: 66.66666667%;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Bar__menu {
+        display: none;
+    }
+
+    .header__buttom--left--responsive {
+        width: 100%;
+    }
+
+    /* main3 */
+    .main_3__container--responsive {
+        display: block;
+    }
+
+    .main_3__left--responsive {
+        width: 100%;
+    }
+
+    .main_3__right--responsive {
+        width: 100%;
+    }
+
+    /* main 4 */
+    .main_4__main--responsive a {
+        width: 31%;
+        min-width: 160px;
+    }
+
+    /* main 10 */
+    .main_10--info {
+        padding: 5px 0px;
+    }
+
+    /* footer */
+    .footer__top--container {
+        display: none;
+    }
+
+    .footer__buttom--dat_hang--right {
+        display: none;
+    }
+
+}
+
+/* table + moble large */
+@media (max-width:991.98px) and (min-width:576px) {}
+
+/* table */
+@media (max-width:991.98px) and (min-width:768px) {
+
+    /* main 5 */
+    .main_5__item {
+        width: 45%;
+    }
+
+    .main_5__item--left {
+        margin-right: 30px;
+    }
+
+    .Goi_Ngai_Cuu {
+        margin-right: auto;
+        margin-left: 25px;
+    }
+}
+
+/* moble large + small */
+@media (max-width:767.98px) {
+
+    /* main 5 */
+    .main_5__item {
+        width: 400px;
+        min-width: 320px;
+    }
+
+    .main_5__item--left {
+        margin-right: 10px;
+    }
+}
+
+/* moble large */
+@media (max-width:767.98px) and (min-width:576px) {}
+
+/* moble small */
+@media (max-width:575.98px) {
+    .gio__hang--responsive span {
+        display: none;
+    }
+
+    .main_3__left--info--responsive {
+        display: block;
+    }
+
+    /* main 4 */
+    .main_4__buttom {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .main_4__buttom a {
+        width: 45%;
+        text-align: center;
+        border: 1px solid bisque;
+        margin: 0;
+    }
+}
