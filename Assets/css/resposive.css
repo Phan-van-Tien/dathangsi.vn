@@ -8,18 +8,13 @@
 /* lop top small */
 @media (min-width: 992px) and (max-width:1199.98px) {
 
-    /* menu an */
-    .menu_an {
-        max-height: 0px;
-        overflow: hidden;
-    }
-
+ 
     .menu_992px {
         display: none;
     }
 
     /* fixxed */
-    .element_fixed a:nth-child(1) {
+    .element_fixed>a:nth-child(1) img {
         position: fixed;
         bottom: 160px;
         right: 5px;
@@ -27,7 +22,7 @@
         width: 30px;
     }
 
-    .element_fixed>a:nth-child(2) {
+    .element_fixed>a:nth-child(2) img {
         position: fixed;
         bottom: 200px;
         right: 5px;
@@ -40,8 +35,24 @@
         bottom: 80px;
         right: 15px;
         cursor: pointer;
-        display: block;
         width: 20px;
+    }
+
+    #bttop a {
+        width: 100%;
+        display: block;
+    }
+
+    #bttop i {
+        padding: 4px;
+        border-radius: 3px;
+        font-size: 100%;
+        background: #F7931D;
+        color: #FFF;
+        text-align: center;
+        margin: 5px 5px;
+        float: left;
+        width: 100%;
     }
 
     /* main 1 */
@@ -82,7 +93,7 @@
 @media (max-width:991.98px) {
 
     /* fixxed */
-    .element_fixed a:nth-child(1) {
+    .element_fixed>a:nth-child(1) img {
         position: fixed;
         bottom: 160px;
         right: 5px;
@@ -90,7 +101,7 @@
         width: 30px;
     }
 
-    .element_fixed>a:nth-child(2) {
+    .element_fixed>a:nth-child(2) img {
         position: fixed;
         bottom: 200px;
         right: 5px;
@@ -103,7 +114,6 @@
         bottom: 80px;
         right: 15px;
         cursor: pointer;
-        display: block;
         width: 20px;
     }
 

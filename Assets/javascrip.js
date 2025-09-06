@@ -1,8 +1,81 @@
 // trược menu ẩn khi click vào bar menu
 var menu_an = document.querySelector(".menu_an")
+var menu__item1 = document.querySelector(".menu__item1 ")
+var menu__item2 = document.querySelector(".menu__item2 ")
+var menu__item3 = document.querySelector(".menu__item3 ")
+var menu__item4 = document.querySelector(".menu__item4 ")
+var menu__item5 = document.querySelector(".menu__item5 ")
+var menu__item6 = document.querySelector(".menu__item6 ")
+var menu__item7 = document.querySelector(".menu__item7 ")
+var menu__item8 = document.querySelector(".menu__item8 ")
+var menu__item9 = document.querySelector(".menu__item9 ")
+var menu__item10 = document.querySelector(".menu__item10 ")
 function hien_menu_an() {
     menu_an.classList.toggle("open1");
+    menu__item1.classList.toggle("open2");
+    setTimeout(() => {
+        menu__item2.classList.toggle("open2");
+    }, 100)
+    setTimeout(() => {
+        menu__item3.classList.toggle("open2");
+    }, 200)
+    setTimeout(() => {
+        menu__item4.classList.toggle("open2");
+    }, 300)
+    setTimeout(() => {
+        menu__item5.classList.toggle("open2");
+    }, 400)
+    setTimeout(() => {
+        menu__item6.classList.toggle("open2");
+    }, 500)
+    setTimeout(() => {
+        menu__item7.classList.toggle("open2");
+    }, 600)
+    setTimeout(() => {
+        menu__item8.classList.toggle("open2");
+    }, 700)
+    setTimeout(() => {
+        menu__item9.classList.toggle("open2");
+    }, 800)
+    setTimeout(() => {
+        menu__item10.classList.toggle("open2");
+    }, 900)
 }
+window.addEventListener("resize", () => {
+    if (window.innerWidth < 1199.98) {
+        menu_an.classList.add("open1");
+        menu__item1.classList.add("open2");
+        setTimeout(() => {
+            menu__item2.classList.add("open2");
+        }, 100)
+        setTimeout(() => {
+            menu__item3.classList.add("open2");
+        }, 200)
+        setTimeout(() => {
+            menu__item4.classList.add("open2");
+        }, 300)
+        setTimeout(() => {
+            menu__item5.classList.add("open2");
+        }, 400)
+        setTimeout(() => {
+            menu__item6.classList.add("open2");
+        }, 500)
+        setTimeout(() => {
+            menu__item7.classList.add("open2");
+        }, 600)
+        setTimeout(() => {
+            menu__item8.classList.add("open2");
+        }, 700)
+        setTimeout(() => {
+            menu__item9.classList.add("open2");
+        }, 800)
+        setTimeout(() => {
+            menu__item10.classList.add("open2");
+        }, 900)
+    } else {
+        hien_menu_an()
+    }
+})
 // trược menu ẩn khi click vào bar menu
 var menu__992px_container = document.querySelector(".menu__992px_container")
 function hien_menu_an__992px() {
@@ -40,3 +113,12 @@ var menu_992px__linhkienul = document.querySelector(".menu_992px__linhkienul")
 function hien_menu_an__992px__linhkienul() {
     menu_992px__linhkienul.classList.toggle("open");
 }
+// lăn chuột
+var bttop = document.querySelector("#bttop")
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) { // nếu cuộn xuống hơn 100px
+        bttop.classList.add("shown");
+    } else {
+        bttop.classList.remove("shown");
+    }
+});  

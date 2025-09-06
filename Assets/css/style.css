@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     color: #666;
+    font-size: 13px;
     --font-size12: clamp(10px, 1vw, 13px);
     --font-size13: clamp(10px, 1.08vw, 14px);
     --font-size14: clamp(10px, 1.16vw, 15px);
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-    font-size: var(--font-size13);
+    font-size: 13px;
     color: #666;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
@@ -36,7 +37,7 @@ a {
 /* Css chung */
 /* css riêng */
 /* fixed */
-.element_fixed a:nth-child(1) {
+.element_fixed>a:nth-child(1) {
     position: fixed;
     bottom: 300px;
     right: 30px;
@@ -63,6 +64,12 @@ a {
     right: 20px;
     cursor: pointer;
     width: 50px;
+    transition: opacity 2s ease-in-out;
+    opacity: 0;
+}
+
+#bttop.shown {
+    opacity: 1;
 }
 
 #bttop a {
@@ -184,7 +191,7 @@ a {
     overflow: hidden;
     text-align: left;
     text-transform: uppercase;
-    font-size: var(--font-size12);
+    font-size: 12px;
     font-weight: bold;
     margin-bottom: 4px;
 }
@@ -202,14 +209,14 @@ a {
 }
 
 .zalo__call {
-    font-size: var(--font-size18);
+    font-size: 18px;
 }
 
 .Bar__menu {
     display: flex;
-    width: 25%;
-    margin-top: 10px;
+    width: 24%;
     margin-left: 10px;
+    margin-right: 10px;
     background: #088E8C;
     align-items: center;
     position: relative;
@@ -239,7 +246,7 @@ a {
     box-shadow: 0 0 6px #999999;
     max-height: 1000px;
     overflow: visible;
-    transition: max-height 1s ease-in-out;
+    transition: max-height 0.9s ease-in-out;
     background-color: #fff;
 }
 
@@ -250,7 +257,62 @@ a {
 
 .menu__item {
     border-bottom: 1px solid #D9DADB;
-    height: 45px;
+    max-height: 45px;
+}
+
+.menu__item.menu__item1 {
+    transition: max-height 0.9s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item2 {
+    transition: max-height 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item3 {
+    transition: max-height 0.7s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item4 {
+    transition: max-height 0.6s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item5 {
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item6 {
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item7 {
+    transition: max-height 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item8 {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item9 {
+    transition: max-height 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item.menu__item10 {
+    transition: max-height 0.1s ease-in-out;
+    overflow: hidden;
+}
+
+.open2 {
+    max-height: 0px;
+    overflow: hidden;
 }
 
 .menu__item>a {
@@ -265,7 +327,7 @@ a {
     justify-content: space-between;
     font-weight: bold;
     line-height: 43px;
-    font-size: var(--font-size13);
+    font-size: 13px;
 }
 
 .menu__item:hover>a>h1 {
@@ -314,7 +376,7 @@ a {
     color: #f60;
     line-height: 26px;
     font-weight: bold;
-    font-size: var(--font-size13);
+    font-size: 13px;
     font-weight: bold;
     line-height: 40px;
 }
@@ -335,7 +397,7 @@ a {
 }
 
 .header__buttom--left {
-    width: 66.66666667%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
 }
@@ -349,6 +411,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .tim__kiem--text {
@@ -559,6 +623,11 @@ a {
     text-align: center;
 }
 
+.main_3__left--info strong {
+    font-size: 15px;
+    line-height: 22px;
+}
+
 .main_3__right {
     width: 50%;
     min-height: 1px;
@@ -611,7 +680,7 @@ a {
 }
 
 .xem_them i {
-    font-size: var(--font-size25);
+    font-size: 25px;
     color: #FFF;
 }
 
@@ -681,7 +750,7 @@ a {
 }
 
 .main_4__main--info p {
-    font-size: var(--font-size12);
+    font-size: 12px;
 }
 
 .main_4__buttom {
@@ -753,7 +822,7 @@ a {
 
 .main_5__item--right p {
     line-height: 21px;
-    font-size: var(--font-size14);
+    font-size: 14px;
 }
 
 .main_5__item--right strong {
@@ -768,7 +837,7 @@ a {
 }
 
 .main_5__item--right h3 {
-    font-size: var(--font-size13);
+    font-size: 13px;
     font-weight: bold;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -809,7 +878,7 @@ a {
 }
 
 .main_10--tile {
-    font-size: var(--font-size16);
+    font-size: 16px;
     color: #FFF;
     text-transform: uppercase;
     background-color: #075386;
@@ -829,22 +898,22 @@ a {
     font-weight: bold;
     text-align: center;
     line-height: 25px;
-    font-size: var(--font-size15);
+    font-size: 15px;
     padding: 5px 0;
 }
 
 .main_10--info strong {
     color: #06C;
-    font-size: var(--font-size15);
+    font-size: 15px;
     line-height: 22px;
     display: inline-block;
 }
 
 .main_10--info i {
     color: #06C;
-    font-size: var(--font-size15);
+    font-size: 15px;
     line-height: 22px;
-    font-size: var(--font-size14);
+    font-size: 14px;
     display: inline-block;
 }
 
@@ -909,7 +978,7 @@ a {
 
 .footer__buttom p {
     color: #FFF;
-    font-size: var(--font-size16);
+    font-size: 16px;
     font-weight: bold;
     line-height: 20px;
 }
