@@ -8,7 +8,7 @@
 /* lop top small */
 @media (min-width: 992px) and (max-width:1199.98px) {
 
- 
+
     .menu_992px {
         display: none;
     }
@@ -115,6 +115,23 @@
         right: 15px;
         cursor: pointer;
         width: 20px;
+    }
+
+    #bttop a {
+        width: 100%;
+        display: block;
+    }
+
+    #bttop i {
+        padding: 4px;
+        border-radius: 3px;
+        font-size: 100%;
+        background: #F7931D;
+        color: #FFF;
+        text-align: center;
+        margin: 5px 5px;
+        float: left;
+        width: 100%;
     }
 
     /* bar menu */
